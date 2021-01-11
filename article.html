@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuckDuckGo Blog</title>
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .section{
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto 70px auto;
+            width:70%;
+            font-size: 20px;
+        }
+        .section p{
+            line-height: 32px;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="header-content">
+            <a href="index.html""><img src=" images/small-duck.png" height="110" width="110"></a>
+            <h1>DuckDuckGo Blog</h1>
+            <h4>Raising the standard of trust online</h4>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="sub-navbar">
+            <a href="index.html">Home</a>
+            <a href="#">Tips</a>
+            <a href="#">Newsettler</a>
+            <a href="#">Research</a>
+            <a href="#">News</a>
+        </div>
+    </div>
+
+    <div class="title">
+        <h1>How to set up your devices for privacy protection</h1>
+        <h3>Privacy on your devices</h3>
+    </div>
+
+
+    <section class="section">
+
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci deserunt provident delectus repellendus unde excepturi a, ullam tenetur aspernatur tempora ipsa atque nam accusamus explicabo maxime animi incidunt vitae. Quasi!
+            Quam delectus, doloremque in autem dignissimos praesentium eos natus accusantium tempora quibusdam quae libero saepe ipsa animi voluptatem cumque provident soluta quidem cum inventore ea reprehenderit nostrum repellendus dolor! Qui!
+            Deleniti, quas quisquam! Atque, hic sint. Nemo, esse modi. Voluptates repudiandae nisi nostrum quis sequi id commodi consectetur tempora tempore iure, iste dicta optio distinctio fuga, sunt expedita. Placeat, non.
+            Eveniet qui eum voluptate cumque reiciendis ipsam! Est ea temporibus voluptates distinctio saepe dignissimos nesciunt iure provident cum nam aspernatur incidunt odit, quia soluta. Atque laboriosam eum sed architecto saepe.
+            Quis officia, odio nobis reiciendis eum commodi dolore unde quos eius quia, laborum ex cumque molestiae, corrupti facere voluptas impedit voluptate consequatur quisquam? Cum, sit dolorem. Quos tempore optio non?
+        </p>
+        <br><br>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci deserunt provident delectus repellendus unde excepturi a, ullam tenetur aspernatur tempora ipsa atque nam accusamus explicabo maxime animi incidunt vitae. Quasi!
+            Quam delectus, doloremque in autem dignissimos praesentium eos natus accusantium tempora quibusdam quae libero saepe ipsa animi voluptatem cumque provident soluta quidem cum inventore ea reprehenderit nostrum repellendus dolor! Qui!
+            Deleniti, quas quisquam! Atque, hic sint. Nemo, esse modi. Voluptates repudiandae nisi nostrum quis sequi id commodi consectetur tempora tempore iure, iste dicta optio distinctio fuga, sunt expedita. Placeat, non.
+            Eveniet qui eum voluptate cumque reiciendis ipsam! Est ea temporibus voluptates distinctio saepe dignissimos nesciunt iure provident cum nam aspernatur incidunt odit, quia soluta. Atque laboriosam eum sed architecto saepe.
+            Quis officia, odio nobis reiciendis eum commodi dolore unde quos eius quia, laborum ex cumque molestiae, corrupti facere voluptas impedit voluptate consequatur quisquam? Cum, sit dolorem. Quos tempore optio non?
+        </p>
+        <br><br>
+        <p>
+            Quam delectus, doloremque in autem dignissimos praesentium eos natus accusantium tempora quibusdam quae libero saepe ipsa animi voluptatem cumque provident soluta quidem cum inventore ea reprehenderit nostrum repellendus dolor! Qui!
+            Deleniti, quas quisquam! Atque, hic sint. Nemo, esse modi. Voluptates repudiandae nisi nostrum quis sequi id commodi consectetur tempora tempore iure, iste dicta optio distinctio fuga, sunt expedita. Placeat, non.
+            Eveniet qui eum voluptate cumque reiciendis ipsam! Est ea temporibus voluptates distinctio saepe dignissimos nesciunt iure provident cum nam aspernatur incidunt odit, quia soluta. Atque laboriosam eum sed architecto saepe.
+            Quis officia, odio nobis reiciendis eum commodi dolore unde quos eius quia, laborum ex cumque molestiae, corrupti facere voluptas impedit voluptate consequatur quisquam? Cum, sit dolorem. Quos tempore optio non?
+        </p>
+    </section>
+
+
+    <div class="footer">
+        <div class="footer-content">
+            <p>DuckDuckGo Blog © 2020</p>
+
+            <div class="footer-options">
+                <a href="#">Latest Posts</a>
+                <a href="#">Twitter</a>
+                <a href="#">Reddit</a>
+                <a href="#">Privacy Crash Course</a>
+                <a href="#">About DuckDuckGo</a>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        let navbar = document.querySelector(".navbar");
+        let subNavbar = document.querySelector(".sub-navbar");
+        var sticky = navbar.offsetTop;
+
+        window.onscroll = function () {
+            myFunction()
+        };
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                subNavbar.style.transition = "all 0.5s"
+                subNavbar.style.height = "40px";
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+                subNavbar.style.height = "50px";
+            }
+        }
+    </script>
+</body>
+
+</html>

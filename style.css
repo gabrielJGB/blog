@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(244 248 251);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(96 165 218);
+    width: 100%;
+    height: 300px;
+
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.header-content h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.header-content h4 {
+    color: white;
+    color: rgb(219, 219, 219);
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.sub-navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    height: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.sub-navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: 100;
+    font-size: 18px;
+
+}
+
+.sub-navbar a:hover {
+    color: rgb(96 165 218);
+}
+
+.navbar {
+    z-index: 4;
+    width: 100%;
+    background-color: white;
+    border-bottom: solid 1px #e5e5e5;
+    
+}
+
+.current{
+    font-weight: 600;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 30px auto 40px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 40px;
+    color: rgb(53, 53, 53);
+    margin-bottom: 8px;
+}
+
+.title h3 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 21px;
+    color: rgb(161, 161, 161);
+}
+
+.card-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    margin: 0 auto 50px auto;
+    gap: 40px;
+}
+
+.image {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    background-color: rgb(198, 231, 236);
+    width: 100%;
+    height: 200px;
+}
+
+.card-info {
+    color:black;
+    padding: 25px;
+    height: 250px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 8px 14px 38px rgba(39, 44, 49, .06), 1px 3px 8px rgba(39, 44, 49, .03);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    transition: all 0.2s ease-in-out;
+}
+
+.category {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 5px;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 22px;
+    color: rgb(15, 15, 15);
+}
+
+.card-text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 23px;
+
+}
+
+.card-footer {
+    margin: 20px;
+}
+
+.card-read {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 20px;
+    float: right;
+}
+
+.card-logo {
+    float: left;
+    margin-bottom: 20px
+}
+
+.footer {
+    display: flex;
+    height: 100px;
+    background-color: rgb(96 165 218);
+    font-size: 14px;
+}
+
+.footer-content {
+    width: 80%;
+    margin: auto;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.footer-options a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-options a:hover {
+    text-decoration: underline;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+.content {
+    padding: 16px;
+}
+
+p{
+    font-size: 18px;
+    text-align: justify;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 40px auto;
+    width:80%;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color: #5b8baf;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+
+@media all and (max-width: 1100px) {
+    .card-box {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .card-box {
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+    }
+}
